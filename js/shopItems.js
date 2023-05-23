@@ -1,7 +1,7 @@
 const item = [
   {
     id: "bookIdOne",
-    name: "booktitleOne",
+    name: "bookTitleOne",
     price: 5 ,
     src: "./assets/images/1.jpg",
     increment: '+',
@@ -81,7 +81,7 @@ const item = [
   },
   {
     id: "bookIdEleven",
-    name: "book 11",
+    name: "bookTitleEleven",
     price: 8.75,
     src: "./assets/images/11.jpg",
     increment: '+',
@@ -128,18 +128,21 @@ const item = [
     decrement: '-',
   },
 ];
+console.log(item);
 
 
 const shopItemsContainer = document.createElement('div');
 shopItemsContainer.classList.add('shop-items');
 document.body.appendChild(shopItemsContainer);
+console.log(shopItemsContainer);
 
 for (let i = 0; i < item.length; i++) {
   const Item = item[i];
 
   const itemCard = document.createElement("div");
   itemCard.classList.add("book-card");
-  itemCard.innerHTML = `
+  itemCard.innerHTML = 
+  `
       <img class="book-image" src="${Item.src}" alt="${Item.name}">
       <div class="book-info">
       <h3 class="book-id">${Item.id}</h3>
@@ -148,6 +151,13 @@ for (let i = 0; i < item.length; i++) {
       <button id="book-btn-increment" class="book-btn">${Item.increment}</button>
       <button id="book-btn-decrement" class="book-btn">${Item.decrement}</button>
       </div>`;
-
   shopItemsContainer.appendChild(itemCard);
+
+  console.log(itemCard);
 }
+
+
+
+
+
+  
