@@ -119,4 +119,8 @@ Special thanks to MFR refugeescode team, tutors and my mentor!
 
 - [@devcodepush](https://github.com/devcodepush)
 
+## Contact
+- [Email](getintouchwithmedn@gmail.com)
+
+
 
